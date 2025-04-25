@@ -8,14 +8,14 @@ module.exports = merge(common, {
   mode: 'production',
   output: {
     filename: 'main.[contenthash].js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
   },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'main.[contenthash].css',
     }),
     new CleanWebpackPlugin({
-      cleanAfterEveryBuildPatterns: ['dist'],
+      cleanAfterEveryBuildPatterns: ['docs'],
     }),
   ],
   module: {
