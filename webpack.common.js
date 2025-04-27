@@ -25,6 +25,10 @@ module.exports = {
           },
         },
       },
+      {
+        test: /\.(mp4|webm|ogg)$/,
+        type: 'asset/resource',
+      },
     ],
   },
 };
