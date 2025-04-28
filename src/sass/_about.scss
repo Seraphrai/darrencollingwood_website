@@ -99,12 +99,21 @@
     font-size: 1.8rem;
     width: 500px;
     line-height: 1.8;
-
+    background-color:   rgba(24, 20, 20, 0.7); /* instead of background: solid + opacity */
+    border-radius: 1rem;
+    padding: 2rem;
+        
     @media (max-width: 600px) {
       width: 80vw;
       margin-left: auto;
       margin-right: auto;
     }
+  }
+
+  & img {
+    height: 200%;
+    width: auto;
+    border-radius: 15%;
   }
 
   &__fade-in {
@@ -116,6 +125,7 @@
     }
   }
 }
+
 
 .skills {
   display: flex;

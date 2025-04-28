@@ -11,35 +11,27 @@
 .socials {
   display: flex;
   margin-bottom: 20px;
-  &__github,
-  &__email {
+
+  &__item {
     display: flex;
     justify-content: center;
     align-items: center;
-    // width: 25px;
     height: 35px;
-
+    margin: 0 0.5rem;
     background-color: transparent;
     cursor: pointer;
-    // border: 2px solid $color-background;
     transition: all 0.2s;
 
     &:hover {
       transform: scale(1.2);
     }
-  }
 
-  &__github {
-    margin-right: 1rem;
-  }
-  &__email {
-    margin-left: 1rem;
-  }
-
-  & img {
-    height: 100%;
+    img {
+      height: 100%;
+    }
   }
 }
+
 
 .copyright {
   color: $color-text;

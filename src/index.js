@@ -90,6 +90,27 @@ function aboutFadeIn(entries, observer) {
           .querySelector('.skills__item--css')
           .classList.add('skills__item-fade-in');
       });
+
+      sleep(2000).then(() => {
+        document
+          .querySelector('.skills__item--java')
+          .classList.add('skills__item-fade-in');
+      });
+      sleep(2100).then(() => {
+        document
+          .querySelector('.skills__item--ppp')
+          .classList.add('skills__item-fade-in');
+      });
+      sleep(2200).then(() => {
+        document
+          .querySelector('.skills__item--next')
+          .classList.add('skills__item-fade-in');
+      });
+      sleep(2300).then(() => {
+        document
+          .querySelector('.skills__item--node')
+          .classList.add('skills__item-fade-in');
+      });
     }
   });
 }
